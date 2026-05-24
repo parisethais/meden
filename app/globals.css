@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bone: #F5F0E8;
+  --bone-warm: #EFE8DC;
+  --indigo: #2D2B6B;
+  --sage: #7A9E7E;
+  --midnight: #15142F;
+  --bone-grid: rgba(21, 20, 47, 0.06);
+  --dark-grid: rgba(245, 240, 232, 0.05);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bone);
+  color: var(--midnight);
+  font-feature-settings: 'ss01', 'ss02';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--indigo);
+  color: var(--bone);
+}
+
+/* Editorial grid backgrounds */
+.grid-bg-light {
+  background-image:
+    linear-gradient(var(--bone-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--bone-grid) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.grid-bg-dark {
+  background-image:
+    linear-gradient(var(--dark-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--dark-grid) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Serif accent for emphasized words (uses Archivo italic-like alternative — fallback to system serif) */
+.serif-accent {
+  font-family: "Source Serif 4", "Source Serif Pro", "Iowan Old Style", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+/* Underlined CTA link */
+.link-line {
+  position: relative;
+  display: inline-block;
+}
+.link-line::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 1px;
+  background: currentColor;
+  transform-origin: left;
+  transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-line:hover::after {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+/* Subtle fade-in on page load */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.rise {
+  animation: rise 700ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.rise-2 { animation-delay: 80ms; }
+.rise-3 { animation-delay: 160ms; }
+.rise-4 { animation-delay: 240ms; }
+.rise-5 { animation-delay: 320ms; }
