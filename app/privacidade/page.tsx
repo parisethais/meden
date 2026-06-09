@@ -30,7 +30,7 @@ export default function PrivacidadePage() {
           eyebrow="Documento legal"
           title="Política de Privacidade"
           version="1.0"
-          updated="junho de 2025"
+          updated="junho de 2026"
         />
       </Section>
 

@@ -29,7 +29,7 @@ export default function TermosPage() {
           eyebrow="Documento legal"
           title="Termos de Uso"
           version="1.0"
-          updated="junho de 2025"
+          updated="junho de 2026"
         />
       </Section>
 
