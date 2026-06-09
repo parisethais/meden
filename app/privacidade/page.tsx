@@ -44,10 +44,15 @@ export default function PrivacidadePage() {
               denominada simplesmente “Firm Collective” ou “nós”.
             </p>
             <p>
-              Operamos a plataforma MedEn (acessível em{" "}
-              <a href="https://meden.health" className="text-indigo link-line">meden.health</a>),
-              um sistema de gestão clínica e prontuário eletrônico destinado a médicos e
-              clínicas.
+              Operamos a plataforma MedEn, um sistema de gestão clínica e prontuário
+              eletrônico destinado a médicos e clínicas. O site institucional está em{" "}
+              <a href="https://meden.health" className="text-indigo link-line">meden.health</a>.
+              O acesso de cada Cliente é entregue em um ambiente dedicado, em subdomínio
+              próprio no formato{" "}
+              <code className="font-mono text-[14px] bg-bone-warm/60 px-1.5 py-0.5 text-indigo">
+                consultorio.meden.health
+              </code>
+              , conforme detalhado nos Termos de Uso.
             </p>
             <p>
               Contato:{" "}

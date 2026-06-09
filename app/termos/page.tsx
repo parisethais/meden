@@ -48,7 +48,7 @@ export default function TermosPage() {
             </p>
           </LegalSection>
 
-          <LegalSection num="02" title="Quem pode usar">
+          <LegalSection num="02" title="Quem pode usar e como o acesso é entregue">
             <p>A plataforma MedEn é destinada exclusivamente a:</p>
             <LegalList
               items={[
@@ -57,10 +57,41 @@ export default function TermosPage() {
                 "Profissionais autorizados pelos médicos titulares (secretárias, recepcionistas).",
               ]}
             />
+
+            <LegalSubhead>2.1 Provisionamento do acesso</LegalSubhead>
             <p>
-              É vedado o uso por menores de 18 anos ou por qualquer pessoa sem habilitação
-              legal para o exercício da atividade médica nas funções que exijam tal
-              habilitação.
+              Não há cadastro autosserviço. O acesso à plataforma é provisionado pela MedEn
+              <strong> após a assinatura do contrato</strong>, em seguida ao alinhamento
+              comercial e ao recebimento das informações necessárias do Cliente.
+            </p>
+
+            <LegalSubhead>2.2 Ambiente dedicado por Cliente</LegalSubhead>
+            <p>
+              Cada Cliente recebe um <strong>ambiente próprio em subdomínio dedicado</strong>{" "}
+              no formato{" "}
+              <code className="font-mono text-[14px] bg-bone-warm/60 px-1.5 py-0.5 text-indigo">
+                consultorio.meden.health
+              </code>{" "}
+              (por exemplo,{" "}
+              <code className="font-mono text-[14px] bg-bone-warm/60 px-1.5 py-0.5 text-indigo">
+                santa-catharina.meden.health
+              </code>
+              ). Os dados, prontuários, agendas e usuários de cada Cliente ficam isolados em
+              seu próprio ambiente.
+            </p>
+
+            <LegalSubhead>2.3 Gestão de usuários internos</LegalSubhead>
+            <p>
+              O Cliente, por meio do médico titular ou da pessoa por ele designada, é
+              responsável por cadastrar e gerenciar os usuários do seu ambiente (médicos
+              adicionais, secretárias, recepcionistas), definindo permissões e revogando
+              acessos quando necessário.
+            </p>
+
+            <p>
+              É vedado o uso da plataforma por menores de 18 anos ou por qualquer pessoa sem
+              habilitação legal para o exercício da atividade médica nas funções que exijam
+              tal habilitação.
             </p>
           </LegalSection>
 
