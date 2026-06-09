@@ -157,7 +157,7 @@ export function PlanPage({ plan, newAreas = [] }: PlanPageProps) {
               Adicione uma <span className="serif-accent text-indigo">secretária gerenciada.</span>
             </h2>
             <p className="mt-6 max-w-xl text-midnight/75 text-base md:text-lg leading-relaxed">
-              Disponível como add-on no {plan.name} — e em todos os planos. Profissional dedicada,
+              Disponível como add-on no {plan.name}, e em todos os planos. Profissional dedicada,
               treinada e gerenciada pela MedEn, trabalhando dentro do Portal.
             </p>
           </div>

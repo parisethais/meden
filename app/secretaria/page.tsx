@@ -146,7 +146,7 @@ export default function SecretariaPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-midnight/10 border border-midnight/10">
           {[
             { num: "01", name: "Solo", body: "Para o médico que toca o consultório com as próprias mãos.", href: "/solo" },
-            { num: "02", name: "Clínica", body: "Para quem já tem equipe — ou está construindo uma.", href: "/clinica" },
+            { num: "02", name: "Clínica", body: "Para quem já tem equipe, ou está construindo uma.", href: "/clinica" },
             { num: "03", name: "Referência", body: "Para o consultório que não deixa nada passar.", href: "/referencia" },
           ].map((p) => (
             <Link

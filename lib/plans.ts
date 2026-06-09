@@ -1,7 +1,7 @@
 // ============================================================================
-// MedEn — Catálogo de planos
+// MedEn · Catálogo de planos
 // Três planos progressivos + Secretaria como add-on em qualquer plano.
-// Sem preços em lugar nenhum — CTA sempre leva ao contato.
+// Sem preços em lugar nenhum. CTA sempre leva ao contato.
 // ============================================================================
 
 export type PlanSlug = "solo" | "clinica" | "referencia";
@@ -58,7 +58,7 @@ const SOLO_GROUPS: FeatureGroup[] = [
       },
       {
         title: "Ficha individual com histórico completo",
-        body: "Cadastro, consultas, exames, documentos, mensagens — tudo na ficha de cada paciente.",
+        body: "Cadastro, consultas, exames, documentos, mensagens. Tudo na ficha de cada paciente.",
       },
       {
         title: "Cadastro com origem de indicação e convênio",
@@ -74,7 +74,7 @@ const SOLO_GROUPS: FeatureGroup[] = [
       },
       {
         title: "Controle de retorno previsto editável",
-        body: "Defina o intervalo de retorno por paciente — 30, 60, 90 dias, ou personalizado.",
+        body: "Defina o intervalo de retorno por paciente: 30, 60, 90 dias, ou personalizado.",
       },
     ],
   },
@@ -83,7 +83,7 @@ const SOLO_GROUPS: FeatureGroup[] = [
     features: [
       {
         title: "Evolução clínica com sinais vitais",
-        body: "PA, FC, peso, altura — registrados em cada consulta, com histórico visual.",
+        body: "PA, FC, peso, altura. Registrados em cada consulta, com histórico visual.",
       },
       {
         title: "Diagnósticos com CID",
@@ -91,7 +91,7 @@ const SOLO_GROUPS: FeatureGroup[] = [
       },
       {
         title: "Resultados laboratoriais com grade colorida",
-        body: "Entrada manual de exames. Amarelo para atenção, vermelho para crítico — automaticamente.",
+        body: "Entrada manual de exames. Amarelo para atenção, vermelho para crítico, automaticamente.",
       },
       {
         title: "Exames de imagem com laudo e arquivo",
@@ -99,11 +99,11 @@ const SOLO_GROUPS: FeatureGroup[] = [
       },
       {
         title: "Histórico completo de consultas",
-        body: "Toda evolução, conduta e prescrição passada — acessível em segundos.",
+        body: "Toda evolução, conduta e prescrição passada, acessível em segundos.",
       },
       {
         title: "Documentos vinculados ao paciente",
-        body: "Receitas, atestados, pedidos de exame, laudos — organizados na ficha.",
+        body: "Receitas, atestados, pedidos de exame, laudos, organizados na ficha.",
       },
     ],
   },
@@ -120,7 +120,7 @@ const SOLO_GROUPS: FeatureGroup[] = [
       },
       {
         title: "Cores por tipo de consulta",
-        body: "Primeira consulta, retorno, procedimento, telemedicina — cada uma com sua cor.",
+        body: "Primeira consulta, retorno, procedimento, telemedicina. Cada uma com sua cor.",
       },
       {
         title: "Visão expandida do dia",
@@ -141,7 +141,7 @@ const SOLO_GROUPS: FeatureGroup[] = [
       },
       {
         title: "Documentos para download",
-        body: "Receitas, atestados e laudos disponíveis 24h — paciente baixa direto.",
+        body: "Receitas, atestados e laudos disponíveis 24h. Paciente baixa direto.",
       },
       {
         title: "Histórico de consultas com conduta",
@@ -161,7 +161,7 @@ const SOLO_GROUPS: FeatureGroup[] = [
       },
       {
         title: "Dados cadastrais editáveis",
-        body: "Mudou de endereço, telefone, plano de saúde — o paciente atualiza sozinho.",
+        body: "Mudou de endereço, telefone, plano de saúde. O paciente atualiza sozinho.",
       },
     ],
   },
@@ -174,7 +174,7 @@ const SOLO_GROUPS: FeatureGroup[] = [
       },
       {
         title: "Lançamentos por categoria",
-        body: "Consultas, procedimentos, aluguel, material, equipe — separados, somados.",
+        body: "Consultas, procedimentos, aluguel, material, equipe. Separados, somados.",
       },
       {
         title: "Controle de notas fiscais emitidas",
@@ -191,7 +191,7 @@ const SOLO_GROUPS: FeatureGroup[] = [
       },
       {
         title: "Mensagem automática pós-consulta",
-        body: "Agradecimento, plano de cuidados, próximos passos — disparados sem você lembrar.",
+        body: "Agradecimento, plano de cuidados, próximos passos. Disparados sem você lembrar.",
       },
       {
         title: "Mensagem de aniversário",
@@ -208,7 +208,7 @@ const CLINICA_EXTRAS: FeatureGroup[] = [
     features: [
       {
         title: "OCR inteligente de laudos",
-        body: "Faça upload do PDF ou foto do laudo — a IA extrai e preenche todos os valores no prontuário, automaticamente.",
+        body: "Faça upload do PDF ou foto do laudo. A IA extrai e preenche todos os valores no prontuário, automaticamente.",
       },
       {
         title: "Prescrição digital via Memed",
@@ -220,12 +220,12 @@ const CLINICA_EXTRAS: FeatureGroup[] = [
     area: "Equipe",
     features: [
       {
-        title: "Múltiplos membros — médicos e secretárias",
+        title: "Múltiplos membros: médicos e secretárias",
         body: "Toda a equipe no mesmo sistema. Cada um vê o que precisa, faz o que pode.",
       },
       {
         title: "Permissões granulares por módulo",
-        body: "Prontuário, agenda, financeiro, pacientes, mensagens — controlado por perfil.",
+        body: "Prontuário, agenda, financeiro, pacientes, mensagens. Controlado por perfil.",
       },
       {
         title: "Perfis pré-definidos",
@@ -238,7 +238,7 @@ const CLINICA_EXTRAS: FeatureGroup[] = [
     features: [
       {
         title: "Pacientes com baixa aderência",
-        body: "Quem não está cumprindo o plano de cuidados — para você intervir antes do desfecho ruim.",
+        body: "Quem não está cumprindo o plano de cuidados, para você intervir antes do desfecho ruim.",
       },
       {
         title: "Retornos vencidos",
@@ -246,7 +246,7 @@ const CLINICA_EXTRAS: FeatureGroup[] = [
       },
       {
         title: "Alertas de laboratório críticos sem seguimento",
-        body: "Resultado em vermelho sem nova consulta agendada — aparece na lista de pendências.",
+        body: "Resultado em vermelho sem nova consulta agendada. Aparece na lista de pendências.",
       },
       {
         title: "Pressão arterial fora da meta",
@@ -271,11 +271,11 @@ const CLINICA_EXTRAS: FeatureGroup[] = [
       },
       {
         title: "Alerta imediato em resultado crítico",
-        body: "Resultado laboratorial atinge nível crítico — você é notificado no WhatsApp em segundos.",
+        body: "Resultado laboratorial atinge nível crítico. Você é notificado no WhatsApp em segundos.",
       },
       {
         title: "Lembrete proativo de retorno",
-        body: "Data prevista se aproxima e o paciente não agendou — Copilot sugere agendar.",
+        body: "Data prevista se aproxima e o paciente não agendou. Copilot sugere agendar.",
       },
     ],
   },
@@ -288,7 +288,7 @@ const REFERENCIA_EXTRAS: FeatureGroup[] = [
     features: [
       {
         title: "Interpretação laboratorial por IA",
-        body: "Análise completa por sistema — função renal, hemograma, metabolismo, função hepática — com resumo clínico estruturado.",
+        body: "Análise completa por sistema (função renal, hemograma, metabolismo, função hepática) com resumo clínico estruturado.",
       },
       {
         title: "Sumário pré-consulta por IA",
@@ -305,11 +305,11 @@ const REFERENCIA_EXTRAS: FeatureGroup[] = [
     features: [
       {
         title: "Consultas em linguagem natural",
-        body: "“Quem são meus pacientes de amanhã?” “Quais exames estão pendentes?” — resposta imediata.",
+        body: "“Quem são meus pacientes de amanhã?” “Quais exames estão pendentes?” Resposta imediata.",
       },
       {
         title: "Análise de dados sob demanda",
-        body: "Distribuição de pacientes, consultas por período, top diagnósticos, alertas laboratoriais — tudo via mensagem.",
+        body: "Distribuição de pacientes, consultas por período, top diagnósticos, alertas laboratoriais. Tudo via mensagem.",
       },
     ],
   },
@@ -318,7 +318,7 @@ const REFERENCIA_EXTRAS: FeatureGroup[] = [
     features: [
       {
         title: "API aberta",
-        body: "Integre com qualquer ferramenta externa — laboratórios, planos de saúde, sistemas próprios.",
+        body: "Integre com qualquer ferramenta externa: laboratórios, planos de saúde, sistemas próprios.",
       },
     ],
   },
@@ -370,7 +370,7 @@ export const plans: Record<PlanSlug, Plan> = {
     forWho:
       "Médico autônomo, consultório particular, agenda gerenciada por ele ou por uma única secretária.",
     description:
-      "Tudo que um consultório precisa para funcionar — CRM, prontuário, agenda, portal do paciente, financeiro e o Copilot básico no WhatsApp. Pronto pra rodar no primeiro dia.",
+      "Tudo que um consultório precisa para funcionar: CRM, prontuário, agenda, portal do paciente, financeiro e o Copilot básico no WhatsApp. Pronto pra rodar no primeiro dia.",
     highlights: [
       "CRM completo com painel de pacientes sem retorno",
       "Prontuário com grade laboratorial colorida (atenção e crítico)",
@@ -396,14 +396,14 @@ export const plans: Record<PlanSlug, Plan> = {
     order: 2,
     num: "02",
     name: "Clínica",
-    tagline: "Para quem já tem equipe — ou está construindo uma.",
+    tagline: "Para quem já tem equipe, ou está construindo uma.",
     forWho:
       "Consultórios com mais de um médico, ou com secretárias e auxiliares trabalhando junto. Quem precisa de permissões, relatórios e Copilot que age sozinho.",
     description:
       "Tudo do Solo, mais OCR de laudos, prescrição Memed, permissões por equipe, relatórios clínicos completos e Copilot intermediário que reativa pacientes e alerta em resultados críticos.",
     highlights: [
       "Tudo do Solo, mais:",
-      "OCR de laudos com IA — sem digitar exame",
+      "OCR de laudos com IA, sem digitar exame",
       "Prescrição digital Memed",
       "Equipe com permissões granulares",
       "Relatórios clínicos: aderência, retornos vencidos, MRPA fora da meta",
@@ -415,7 +415,7 @@ export const plans: Record<PlanSlug, Plan> = {
       body: "Além das automações do Solo, o Copilot do plano Clínica age sozinho na recuperação de pacientes e em alertas de segurança clínica.",
       examples: [
         { who: "Copilot", text: "Resultado de Maria Lima acabou de chegar: creatinina 2.1 mg/dL. Marcado em vermelho. Quer que eu agende retorno?" },
-        { who: "Copilot", text: "João Pereira não consulta há 8 meses — última conduta era retorno em 90 dias. Posso mandar mensagem de reativação?" },
+        { who: "Copilot", text: "João Pereira não consulta há 8 meses. Última conduta era retorno em 90 dias. Posso mandar mensagem de reativação?" },
       ],
     },
     next: { slug: "referencia", name: "Referência", num: "03" },
@@ -441,12 +441,12 @@ export const plans: Record<PlanSlug, Plan> = {
     groups: REFERENCIA_GROUPS,
     copilot: {
       title: "Copilot Completo",
-      body: "Conversa de verdade com o consultório. Responde sobre pacientes, agenda, exames e tendências — e entrega o sumário clínico no WhatsApp antes de cada consulta.",
+      body: "Conversa de verdade com o consultório. Responde sobre pacientes, agenda, exames e tendências, e entrega o sumário clínico no WhatsApp antes de cada consulta.",
       examples: [
         { who: "Médico", text: "Quem são meus pacientes de amanhã?" },
         { who: "Copilot", text: "Você tem 6 pacientes. Primeiro: Carlos Silva, 8h, retorno. Última creatinina: 1.8 (↑). Quer o sumário completo?" },
         { who: "Médico", text: "Sim" },
-        { who: "Copilot", text: "Carlos Silva, 58a. HAS, DM2, DRC estágio 3. Última consulta há 60 dias — ajustou losartana para 100mg. MRPA da última semana: média 142×89. Creatinina hoje 1.8 (subiu de 1.6). Atenção pra função renal." },
+        { who: "Copilot", text: "Carlos Silva, 58a. HAS, DM2, DRC estágio 3. Última consulta há 60 dias, ajustou losartana para 100mg. MRPA da última semana: média 142×89. Creatinina hoje 1.8 (subiu de 1.6). Atenção pra função renal." },
       ],
     },
     next: { slug: "solo", name: "Solo", num: "01" },
@@ -462,7 +462,7 @@ export const planList: Plan[] = [plans.solo, plans.clinica, plans.referencia];
 export const fullCatalog = REFERENCIA_GROUPS;
 
 // ----------------------------------------------------------------------------
-// Secretaria — add-on, não plano
+// Secretaria · add-on, não plano
 // ----------------------------------------------------------------------------
 
 export const secretaria = {
@@ -485,7 +485,7 @@ export const secretaria = {
     },
     {
       title: "Continuidade garantida",
-      body: "Férias, faltas, desligamentos — coberturas treinadas no seu histórico. Você não precisa agir.",
+      body: "Férias, faltas, desligamentos. Coberturas treinadas no seu histórico. Você não precisa agir.",
     },
     {
       title: "Auditoria de qualidade mensal",
@@ -500,7 +500,7 @@ export const secretaria = {
     "Contratar leva semanas. Treinar leva meses.",
     "Quando ela vai bem, ela é assediada por outros consultórios.",
     "Quando ela sai, você volta pra estaca zero.",
-    "Férias, atestados, faltas — sempre na sua conta.",
-    "CLT, encargos, vale, plano de saúde — tudo no seu CNPJ.",
+    "Férias, atestados, faltas. Sempre na sua conta.",
+    "CLT, encargos, vale, plano de saúde. Tudo no seu CNPJ.",
   ],
 };

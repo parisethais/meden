@@ -5,7 +5,7 @@ import { plans } from "@/lib/plans";
 export const metadata: Metadata = {
   title: "Plano Clínica · MedEn",
   description:
-    "Para quem já tem equipe — ou está construindo uma. OCR de laudos, prescrição Memed, permissões granulares, relatórios clínicos completos e Copilot intermediário.",
+    "Para quem já tem equipe, ou está construindo uma. OCR de laudos, prescrição Memed, permissões granulares, relatórios clínicos completos e Copilot intermediário.",
 };
 
 export default function ClinicaPage() {

@@ -1,12 +1,12 @@
 import Link from "next/link";
 
 /**
- * Three brand-safe logo tones — pick by the background of the surface the
+ * Three brand-safe logo tones. Pick by the background of the surface the
  * logo is sitting on, not by the "feel" of the page.
  *
  * - ink-on-light: bone / paper / light surfaces (default).  M/d/n indigo, E sage.
  * - paper-on-dark: indigo / midnight surfaces.              M/d/n bone,  E sage.
- * - ink-on-sage:   sage surface — sage E would vanish.       M/d/n midnight, E indigo.
+ * - ink-on-sage:   sage surface. Sage E would vanish.        M/d/n midnight, E indigo.
  */
 export type LogoTone = "ink-on-light" | "paper-on-dark" | "ink-on-sage";
 

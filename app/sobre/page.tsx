@@ -6,7 +6,7 @@ import { CTA } from "@/components/CTA";
 export const metadata: Metadata = {
   title: "Sobre · MedEn",
   description:
-    "MedEn — a plataforma do consultório médico. CRM, prontuário, agenda, Copilot de IA via WhatsApp e secretaria gerenciada como add-on.",
+    "MedEn · a plataforma do consultório médico. CRM, prontuário, agenda, Copilot de IA via WhatsApp e secretaria gerenciada como add-on.",
 };
 
 export default function SobrePage() {
@@ -26,8 +26,8 @@ export default function SobrePage() {
 
         <p className="mt-14 md:mt-20 max-w-2xl text-base md:text-lg text-midnight/70 leading-relaxed rise rise-3">
           A MedEn nasceu de uma observação simples: o tempo do médico é o ativo mais escasso e
-          o mais mal cuidado do sistema de saúde. Construímos uma plataforma — tecnologia, IA
-          e serviço humano — para devolver esse tempo ao que realmente importa.
+          o mais mal cuidado do sistema de saúde. Construímos uma plataforma de tecnologia, IA
+          e serviço humano para devolver esse tempo ao que realmente importa.
         </p>
       </Section>
 
@@ -44,7 +44,7 @@ export default function SobrePage() {
 
         <p className="mt-10 max-w-2xl text-bone/65 text-base md:text-lg leading-relaxed">
           Cada decisão na MedEn passa por esse filtro. Se o produto não devolve tempo ao
-          médico — para o paciente, para a família, para si mesmo — não vai pra produção.
+          médico (para o paciente, para a família, para si mesmo), não vai pra produção.
         </p>
       </Section>
 
@@ -62,7 +62,7 @@ export default function SobrePage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-midnight/10 border border-midnight/10">
           {[
             { num: "01", name: "Solo", body: "Para o médico que toca o consultório com as próprias mãos.", href: "/solo" },
-            { num: "02", name: "Clínica", body: "Para quem já tem equipe — ou está construindo uma.", href: "/clinica" },
+            { num: "02", name: "Clínica", body: "Para quem já tem equipe, ou está construindo uma.", href: "/clinica" },
             { num: "03", name: "Referência", body: "Para o consultório que não deixa nada passar.", href: "/referencia" },
           ].map((item) => (
             <Link

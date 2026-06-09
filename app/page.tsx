@@ -11,22 +11,22 @@ const day = [
   {
     time: "07h30",
     title: "Briefing do dia chega no WhatsApp",
-    body: "O Copilot manda os pacientes do dia, em ordem. Carlos Silva às 8h — retorno, creatinina subiu de 1.6 pra 1.8 na última coleta. Você lê no caminho.",
+    body: "O Copilot manda os pacientes do dia, em ordem. Carlos Silva às 8h, retorno, creatinina subiu de 1.6 pra 1.8 na última coleta. Você lê no caminho.",
   },
   {
     time: "08h00",
     title: "Consulta começa com o prontuário aberto",
-    body: "Histórico de Carlos, últimos exames e plano da consulta anterior — já carregados. Você não digita login, não procura papel.",
+    body: "Histórico de Carlos, últimos exames e plano da consulta anterior, já carregados. Você não digita login, não procura papel.",
   },
   {
     time: "08h45",
     title: "Maria traz o laudo da ressonância",
-    body: "Foto do PDF, upload em dois cliques. O OCR extrai tudo e preenche o prontuário. Creatinina nova: 2.1 mg/dL — aparece em vermelho, automaticamente.",
+    body: "Foto do PDF, upload em dois cliques. O OCR extrai tudo e preenche o prontuário. Creatinina nova de 2.1 mg/dL aparece em vermelho, automaticamente.",
   },
   {
     time: "12h00",
     title: "Três pacientes sem retorno há mais de 90 dias",
-    body: "O sistema identifica, o Copilot manda mensagem de reativação no tom certo. Você não precisa abrir nada — só aprovar.",
+    body: "O sistema identifica, o Copilot manda mensagem de reativação no tom certo. Você só precisa aprovar.",
   },
   {
     time: "18h00",
@@ -58,7 +58,7 @@ export default function HomePage() {
         <div className="mt-auto pt-16 md:pt-20 grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 items-end rise rise-4">
           <p className="md:col-span-7 text-base md:text-lg text-midnight/70 leading-relaxed max-w-2xl">
             A MedEn é a plataforma do seu consultório: CRM, prontuário, agenda, portal do
-            paciente, financeiro, Copilot de IA no WhatsApp e secretaria humana gerenciada —
+            paciente, financeiro, Copilot de IA no WhatsApp e secretaria humana gerenciada,
             disponível como add-on em qualquer plano.
           </p>
           <div className="md:col-span-5 flex flex-wrap items-center gap-4 md:justify-end">
@@ -86,12 +86,12 @@ export default function HomePage() {
         <div className="mt-12 grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12">
           <p className="md:col-span-7 text-bone/80 text-lg md:text-xl leading-relaxed">
             Três prontuários por preencher. A secretária ainda não confirmou os pacientes de
-            amanhã. Aquele resultado de creatinina que subiu há duas semanas — você não lembra
+            amanhã. Aquele resultado de creatinina que subiu há duas semanas, você não lembra
             se já ligou pra Ana Lima. Tem uma receita pra refazer, um pedido de exame, um
             atestado. E o Maurício, sumido há 8 meses, devia ter voltado pro retorno.
           </p>
           <p className="md:col-span-5 text-bone/55 text-base md:text-lg leading-relaxed">
-            Isso não é ineficiência sua. Isso é o padrão do consultório brasileiro — um sistema
+            Isso não é ineficiência sua. Isso é o padrão do consultório brasileiro: um sistema
             que assume que o médico vai resolver tudo nas horas que sobram. <br /><br />
             <span className="serif-accent text-sage text-xl md:text-2xl">A MedEn existe pra desfazer esse padrão.</span>
           </p>
@@ -146,7 +146,7 @@ export default function HomePage() {
         </h2>
         <p className="text-midnight/65 text-base md:text-lg max-w-2xl mb-14 md:mb-16 leading-relaxed">
           O plano organiza o que está incluído. O número de médicos é configurável em todos.
-          A conversa sobre valor é com a gente, no contato — o que importa aqui é encontrar
+          A conversa sobre valor é com a gente, no contato. O que importa aqui é encontrar
           a forma certa do seu consultório.
         </p>
 
@@ -178,7 +178,7 @@ export default function HomePage() {
         </h2>
         <p className="text-bone/75 text-base md:text-lg max-w-2xl mb-14 leading-relaxed">
           Sem instalar nada. Sem trocar de aplicativo. O Copilot conversa com você no mesmo
-          número que a secretária usa — e age dentro do prontuário, da agenda e do CRM.
+          número que a secretária usa, e age dentro do prontuário, da agenda e do CRM.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-14 items-start">
@@ -222,7 +222,7 @@ export default function HomePage() {
 
         <div className="mt-16 pt-10 border-t border-bone/15 grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            { label: "Plano Solo", body: "Confirmação de consulta, mensagem pós-atendimento e aniversário — automáticos." },
+            { label: "Plano Solo", body: "Confirmação de consulta, mensagem pós-atendimento e aniversário, automáticos." },
             { label: "Plano Clínica", body: "Reativação de pacientes inativos, alertas críticos e lembretes proativos de retorno." },
             { label: "Plano Referência", body: "Linguagem natural, sumário pré-consulta no WhatsApp e análise sob demanda." },
           ].map((c) => (
@@ -247,7 +247,7 @@ export default function HomePage() {
           Não escondemos o que o produto faz. <span className="serif-accent text-sage">Aqui está tudo.</span>
         </h2>
         <p className="text-midnight/65 text-base md:text-lg max-w-2xl mb-14 md:mb-16 leading-relaxed">
-          O catálogo abaixo é o que está no plano Referência — o mais completo. O Solo e o
+          O catálogo abaixo é o que está no plano Referência, o mais completo. O Solo e o
           Clínica contêm um subconjunto. Veja a comparação na{" "}
           <Link href="/planos" className="text-indigo link-line">página de planos</Link>.
         </p>
@@ -270,7 +270,7 @@ export default function HomePage() {
             <p className="mt-8 text-midnight/80 text-base md:text-lg leading-relaxed max-w-xl">
               Profissional dedicada ao seu consultório, treinada pela MedEn e gerenciada por
               nós. Sem CLT, sem rotatividade, com continuidade garantida quando ela tirar
-              férias ou for substituída. Trabalha dentro do mesmo Portal — você acompanha tudo.
+              férias ou for substituída. Trabalha dentro do mesmo Portal, e você acompanha tudo.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center gap-4">
@@ -288,7 +288,7 @@ export default function HomePage() {
 
           <ul className="md:col-span-5 grid grid-cols-1 gap-3">
             {[
-              "Sem vínculo trabalhista — assinatura mensal",
+              "Sem vínculo trabalhista, assinatura mensal",
               "Treinada em atendimento médico e glossário clínico",
               "Cobertura garantida em férias, faltas e desligamentos",
               "Auditoria mensal de qualidade com plano de melhoria",

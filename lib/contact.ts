@@ -7,7 +7,7 @@ export const contact = {
   whatsapp: {
     /** Número formatado para exibição. */
     display: "+55 19 99473-1092",
-    /** Mesmo número, formato wa.me — só dígitos com código do país. */
+    /** Mesmo número, formato wa.me. Só dígitos com código do país. */
     wameId: "5519994731092",
     /** Texto pré-preenchido na conversa do WhatsApp. */
     defaultMessage:

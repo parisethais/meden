@@ -28,7 +28,7 @@ const config: Config = {
         mono: ["var(--font-dm-mono)", "ui-monospace", "monospace"],
       },
       fontSize: {
-        // Editorial scale — refined for readability at desktop widths
+        // Editorial scale, refined for readability at desktop widths
         "display-xl": ["clamp(44px, 6.2vw, 96px)", { lineHeight: "1.02", letterSpacing: "-0.03em" }],
         "display-lg": ["clamp(36px, 4.8vw, 72px)", { lineHeight: "1.04", letterSpacing: "-0.025em" }],
         "display-md": ["clamp(30px, 3.8vw, 56px)", { lineHeight: "1.08", letterSpacing: "-0.02em" }],

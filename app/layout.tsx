@@ -27,7 +27,7 @@ const sourceSerif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  title: "MedEn — A parceira digital que o médico nunca teve",
+  title: "MedEn · A parceira digital que o médico nunca teve",
   description:
     "Tecnologia, inteligência artificial e serviço humano numa plataforma única para médicos de consultório particular e clínicas. Menos gestão. Mais medicina.",
   keywords: [
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "MedEn" }],
   openGraph: {
-    title: "MedEn — A parceira digital que o médico nunca teve",
+    title: "MedEn · A parceira digital que o médico nunca teve",
     description: "Menos gestão. Mais medicina.",
     type: "website",
     locale: "pt_BR",

@@ -9,7 +9,7 @@ import { planList, fullCatalog, type FeatureGroup, type PlanSlug } from "@/lib/p
 export const metadata: Metadata = {
   title: "Planos · MedEn",
   description:
-    "Solo, Clínica e Referência — os três planos da MedEn para consultórios médicos. CRM, prontuário, agenda, IA via WhatsApp e secretaria gerenciada como add-on.",
+    "Solo, Clínica e Referência: os três planos da MedEn para consultórios médicos. CRM, prontuário, agenda, IA via WhatsApp e secretaria gerenciada como add-on.",
 };
 
 // Marca em qual plano cada feature aparece pela primeira vez.
@@ -44,7 +44,7 @@ export default function PlanosPage() {
 
         <p className="mt-10 max-w-2xl text-base md:text-lg text-midnight/70 leading-relaxed rise rise-2">
           O plano organiza o que está incluído. O número de médicos é configurável em qualquer
-          um. O valor a gente conversa no contato — o que importa aqui é encontrar o formato
+          um. O valor a gente conversa no contato. O que importa aqui é encontrar o formato
           certo pro seu consultório.
         </p>
       </Section>
@@ -145,7 +145,7 @@ export default function PlanosPage() {
               <span className="serif-accent text-sage">em qualquer plano.</span>
             </h2>
             <p className="mt-6 max-w-xl text-bone/75 text-base md:text-lg leading-relaxed">
-              Adicionar uma secretária dedicada — treinada e gerenciada pela MedEn — é
+              Adicionar uma secretária dedicada (treinada e gerenciada pela MedEn) é
               independente do plano. Pode estar em Solo, Clínica ou Referência.
             </p>
           </div>
@@ -183,5 +183,5 @@ function Check() {
 }
 
 function Dash() {
-  return <span className="text-midnight/20 text-base" aria-label="Não incluído">—</span>;
+  return <span className="text-midnight/20 text-base" aria-label="Não incluído">·</span>;
 }

@@ -18,7 +18,7 @@ const styles = {
     "border border-bone/30 text-bone hover:border-sage hover:text-sage bg-transparent",
 } as const;
 
-/** Ícone WhatsApp em SVG inline — herda a cor do texto via currentColor. */
+/** Ícone WhatsApp em SVG inline. Herda a cor do texto via currentColor. */
 const WhatsAppGlyph = () => (
   <svg
     width="14"
