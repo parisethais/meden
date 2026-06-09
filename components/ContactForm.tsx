@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { WhatsAppButton } from "./WhatsAppButton";
+import { mailLink } from "@/lib/contact";
 
 type Status = "idle" | "submitting" | "success";
 
@@ -19,11 +21,9 @@ export function ContactForm() {
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("submitting");
-    const body = encodeURIComponent(
-      `Nome: ${data.nome}\nE-mail: ${data.email}\nEspecialidade: ${data.especialidade}\n\n${data.mensagem}`
-    );
-    const subject = encodeURIComponent(`Contato MedEn — ${data.nome || "novo lead"}`);
-    window.location.href = `mailto:contato@meden.com.br?subject=${subject}&body=${body}`;
+    const subject = `Contato MedEn — ${data.nome || "novo lead"}`;
+    const body = `Nome: ${data.nome}\nE-mail: ${data.email}\nEspecialidade: ${data.especialidade}\n\n${data.mensagem}`;
+    window.location.href = mailLink(subject, body);
     setTimeout(() => setStatus("success"), 600);
   };
 
@@ -43,6 +43,19 @@ export function ContactForm() {
 
   return (
     <form onSubmit={onSubmit} className="space-y-10">
+      {/* Atalho WhatsApp — mais rápido pra quem tá com pressa */}
+      <div className="flex items-center justify-between gap-6 flex-wrap pb-8 border-b border-midnight/10">
+        <div>
+          <div className="font-mono text-[10px] tracking-[0.25em] uppercase text-midnight/50 mb-2">
+            Prefere WhatsApp?
+          </div>
+          <p className="text-[15px] text-midnight/70 max-w-md leading-relaxed">
+            Chame direto no número compartilhado MedEn · Firm Collective.
+          </p>
+        </div>
+        <WhatsAppButton variant="solid" label="Abrir conversa" />
+      </div>
+
       <Field label="Nome" name="nome" value={data.nome} onChange={onChange("nome")} required />
       <Field
         label="E-mail"

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Section, Label, Eyebrow } from "@/components/Section";
 import { ContactForm } from "@/components/ContactForm";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { contact } from "@/lib/contact";
 
 export const metadata: Metadata = {
   title: "Contato · MedEn",
@@ -38,13 +40,26 @@ export default function ContatoPage() {
           <aside className="md:col-span-5 md:pl-8 md:border-l md:border-midnight/10 space-y-10">
             <div>
               <div className="font-mono text-[10px] tracking-[0.25em] uppercase text-midnight/45 mb-3">
+                WhatsApp
+              </div>
+              <p className="font-sans text-xl md:text-2xl text-indigo mb-4">
+                {contact.whatsapp.display}
+              </p>
+              <WhatsAppButton variant="solid" label="Abrir conversa" />
+              <p className="mt-3 text-xs text-midnight/45 leading-relaxed">
+                Canal compartilhado MedEn · Firm Collective.
+              </p>
+            </div>
+
+            <div>
+              <div className="font-mono text-[10px] tracking-[0.25em] uppercase text-midnight/45 mb-3">
                 E-mail
               </div>
               <a
-                href="mailto:contato@meden.com.br"
-                className="font-sans text-xl md:text-2xl text-indigo link-line"
+                href={`mailto:${contact.email}`}
+                className="font-sans text-xl md:text-2xl text-indigo link-line break-all"
               >
-                contato@meden.com.br
+                {contact.email}
               </a>
             </div>
 
@@ -63,16 +78,6 @@ export default function ContatoPage() {
               </div>
               <p className="text-base text-midnight/85 leading-snug">
                 Até <span className="text-indigo font-semibold">1 dia útil</span>.
-              </p>
-            </div>
-
-            <div className="pt-6 border-t border-midnight/10">
-              <div className="font-mono text-[10px] tracking-[0.25em] uppercase text-midnight/45 mb-3">
-                Já é cliente?
-              </div>
-              <p className="text-[15px] text-midnight/70 leading-relaxed">
-                Use o canal direto da sua secretaria gerenciada — atendimento prioritário pelo
-                WhatsApp do consultório.
               </p>
             </div>
           </aside>

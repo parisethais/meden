@@ -6,3 +6,23 @@ build
 .env*.local
 *.log
 .vercel
+
+# Documentos confidenciais (precificação, contratos, internos)
+*.pdf
+*.docx
+*.doc
+*.xlsx
+*.xls
+*.pptx
+*.ppt
+
+# Arquivos temporários (locks de office, swap files, etc.)
+*.tmp
+*.swp
+.~lock.*
+.~*
+~$*
+
+# Backups
+*.bak
+*.orig

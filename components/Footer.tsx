@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Logo } from "./Logo";
+import { contact, waLink } from "@/lib/contact";
 
 const cols = [
   {
@@ -67,7 +68,23 @@ export function Footer() {
 
         <div className="pt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4 font-mono text-[10px] tracking-[0.25em] uppercase text-bone/40">
           <span>© {new Date().getFullYear()} MedEn · Tecnologia Médica</span>
-          <span>São Paulo · Brasil · contato@meden.com.br</span>
+          <span className="flex flex-wrap items-center gap-x-4 gap-y-1">
+            <span>{contact.location}</span>
+            <a
+              href={`mailto:${contact.email}`}
+              className="hover:text-sage transition-colors break-all"
+            >
+              {contact.email}
+            </a>
+            <a
+              href={waLink()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-sage transition-colors"
+            >
+              WhatsApp · {contact.whatsapp.display}
+            </a>
+          </span>
         </div>
       </div>
     </footer>
