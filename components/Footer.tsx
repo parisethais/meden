@@ -23,8 +23,8 @@ const cols = [
   {
     title: "Legal",
     links: [
-      { href: "/contato", label: "Privacidade" },
-      { href: "/contato", label: "Termos" },
+      { href: "/privacidade", label: "Privacidade" },
+      { href: "/termos", label: "Termos" },
     ],
   },
 ];
